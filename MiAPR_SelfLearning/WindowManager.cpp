@@ -49,3 +49,12 @@ void WindowManager::ShowWindow(WINDOW_TYPE wndType)
 	targetWindow->Show();
 	activeWindow = (Window*)targetWindow;
 }
+
+void WindowManager::SetInitialData(int image_vectors_count)
+{
+	if (mainWindow != NULL)
+	{
+		mainWindow->SetInitialData(image_vectors_count);
+	}
+
+}

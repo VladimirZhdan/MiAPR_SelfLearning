@@ -4,6 +4,7 @@
 DialogManager::DialogManager()
 {
 	aboutDialog = NULL;	
+	chooseVectorsCountDialog = NULL;
 }
 
 
@@ -34,6 +35,12 @@ Dialog* DialogManager::GetDialog(DIALOG_TYPE dlgType, HWND hWndParent)
 			aboutDialog = new AboutDialog(hWndParent);
 		}
 		return aboutDialog;	
+	case DIALOG_TYPE::VECTORSCOUNT:
+		if (chooseVectorsCountDialog == NULL)
+		{
+			chooseVectorsCountDialog = new ChooseVectorsCountDialog(hWndParent);
+		}
+		return chooseVectorsCountDialog;
 	default:
 		return nullptr;
 	}

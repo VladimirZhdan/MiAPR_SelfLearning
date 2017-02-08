@@ -41,6 +41,11 @@ void ImageVectorsRegion::AddImageVectorToRegion(ImageVector * value)
 	image_vector_list.push_back(value);
 }
 
+std::vector<ImageVector*> ImageVectorsRegion::GetImageVectorList()
+{
+	return image_vector_list;
+}
+
 void ImageVectorsRegion::ClearRegion()
 {
 	image_vector_list.clear();

@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AboutDialog.h" />
+    <ClInclude Include="ChooseVectorsCountDialog.h" />
     <ClInclude Include="Dialog.h" />
     <ClInclude Include="DialogManager.h" />
     <ClInclude Include="DrawingLogic.h" />
@@ -162,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AboutDialog.cpp" />
+    <ClCompile Include="ChooseVectorsCountDialog.cpp" />
     <ClCompile Include="Dialog.cpp" />
     <ClCompile Include="DialogManager.cpp" />
     <ClCompile Include="DrawingLogic.cpp" />

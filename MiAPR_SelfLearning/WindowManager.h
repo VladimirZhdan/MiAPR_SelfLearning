@@ -30,6 +30,10 @@ public:
 	static WindowManager* GetInstance();
 	Window* GetWindow(WINDOW_TYPE wndType);
 	void ShowWindow(WINDOW_TYPE wndType);
+
+	//logic methods
+
+	void SetInitialData(int image_vectors_count);
 private:
 	//fields
 	static HINSTANCE hInstance;

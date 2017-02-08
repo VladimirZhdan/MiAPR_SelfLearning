@@ -4,10 +4,12 @@
 #include "WindowManager.h"
 
 #include "AboutDialog.h"
+#include "ChooseVectorsCountDialog.h"
 
 enum class DIALOG_TYPE
 {
-	ABOUT
+	ABOUT,
+	VECTORSCOUNT
 };
 
 class DialogManager
@@ -20,4 +22,5 @@ public:
 private:
 	Dialog* GetDialog(DIALOG_TYPE, HWND hWndParent);
 	AboutDialog *aboutDialog;
+	ChooseVectorsCountDialog *chooseVectorsCountDialog;
 };

@@ -14,6 +14,7 @@ public:
 	bool IsCoreCompleted();
 
 	void AddImageVectorToRegion(ImageVector* value);
+	std::vector<ImageVector*> GetImageVectorList();
 	void ClearRegion();
 
 	void DefineRegionCore(long* sync_variable);
